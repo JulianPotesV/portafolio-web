@@ -2,26 +2,27 @@
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import Button from '../components/Button.astro';
+import Label from '../components/Label.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<section id="hero" class="flex justify-center items-center">
+	<section id="hero" class="flex justify-center items-center mt-[2.5rem]">
 		<div>
 			<img class="h-[43.938rem]" src="/hero-julian.png" alt="" />
 		</div>
 
 		<div class="text-white">
-			<h2 class="text-[#FF0000] text-[3rem]">Hola, mi nombre es</h2>
-			<h1 class="text-[#FF0000] text-[7.438rem] font-bold">Julián Potes</h1>
-			<p class="text-[1.688rem] max-w-[35.5rem]">
+			<h2 class="text-[#FF0000] text-[3rem] leading-[0.5]">Hola, mi nombre es</h2>
+			<h1 class="text-[#FF0000] text-[7.438rem] font-bold  ">Julián Potes</h1>
+			<p class="text-[1.688rem] max-w-[35.5rem] font-normal">
 				Soy diseñador gráfico, apasionado por crear soluciones visuales
 				funcionales y con propósito.
 			</p>
-			<div class="text-white">
-				<span>Diseño</span>
-				<span>UX/UI</span>
-				<span>Desarrollo</span>
+			<div class="flex gap-4.5 mt-8.5 mb-[7rem]">
+				<Label texto="Diseño" iconSrc="/icons/pluma.svg" />
+				<Label texto="UX/UI" iconSrc="/icons/compu.svg" />
+				<Label texto="Desarrollo" iconSrc="/icons/dev.svg" />
 			</div>
 			<Button texto="Currículo" iconoSrc="/icons/descarga.svg" />
 		</div>
