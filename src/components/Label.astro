@@ -1,8 +1,10 @@
 ---
-const { texto, iconSrc, alt="" } = Astro.props;
+const { texto, iconSrc, alt = '' } = Astro.props;
 ---
 
-<span class="inline-flex bg-[#1E1E1E] text-[#FF0000] px-8 py-2.5 rounded-full gap-2 text-4.2">
-    <img src={iconSrc} alt={alt}>
-    <span>{texto}</span>
+<span
+	class="inline-flex bg-[#1E1E1E] text-[#FF0000] px-8 py-2.5 rounded-full gap-2 text-4.2"
+>
+	<img src={iconSrc} alt={alt} />
+	<span>{texto}</span>
 </span>
