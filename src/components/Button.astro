@@ -1,0 +1,9 @@
+---
+const {texto, iconoSrc, alt=""} = Astro.props;
+---
+
+<button class="flex bg-[#FF0000] items-center rounded-full gap-4 py-2.5 px-10 text-2xl">
+    <span>{texto}</span>
+    <img src={iconoSrc} alt={alt}>
+
+</button>
