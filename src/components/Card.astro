@@ -1,0 +1,28 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+  link: string;
+  label: string;
+  alt?: string;
+}
+const { title, href, label, link, alt = '' } = Astro.props;
+---
+
+<article class="rounded-[10px] bg-[#0e0e0e] px-4 pt-4 pb-4">
+  <img src={href} alt={alt}>
+
+  <a href={link}>
+    <h3 class="mt-4 font-semibold text-lg text-white">
+      {title}
+    </h3>
+  </a>
+
+  <div class="mt-4 flex flex-wrap gap-1">
+    <span
+      class="rounded-full bg-[#1E1E1E] px-2.5 py-0.5 text-xs whitespace-nowrap text-[#FF0000]"
+    >
+      {label}
+    </span>
+  </div>
+</article>

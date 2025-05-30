@@ -4,6 +4,7 @@ import Footer from '../components/Footer.astro';
 import Button from '../components/Button.astro';
 import Label from '../components/Label.astro';
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
 ---
 
 <Layout>
@@ -49,6 +50,24 @@ import Layout from '../layouts/Layout.astro';
 				<h2 class="text-4xl font-semibold text-[#FF0000] mb-8">Visión Web</h2>
 				<p>Integro diseño y desarrollo para crear sitios modernos, dinámicos y optimizados para todos los dispositivos.</p>
 			</span>
+
+		</div>
+	</section>
+
+	<!-- Proyectos -->
+	<section class="max-w-[71rem] mx-auto mt-32">
+		<div class="text-white flex place-content-between">
+			<h1 class="text-[#FF0000] text-4xl font-semibold">Algunos de mis trabajos</h1>
+			<Button texto="Ver todos" iconoSrc="/icons/flecha-derecha.svg" />
+		</div>
+		<p class="text-white w-96">Un vistazo a los proyectos más representativos de mi recorrido profesional.</p>
+
+		<!--Tarjetas -->
+		<div class="grid grid-cols-2 gap-8 mt-[8rem]">
+			<Card title='Diseño de sitio web XmartMedia' href='/images/xmartmedia.png' label='UX/UI' link='#' /> 
+			<Card title="Creación de logo y piezas gráficas Colombian Place" href='/images/colombian-place.png' label='Diseño' link='#' />
+			<Card title="Propuesta de branding corporativo Xherpa" href='/images/xherpa.png' label='Diseño' link='#' />
+			<Card title="Diseño sitio web Boating Cartagena" href='/images/boating-cartagena.png' label='UX/UI' link='#' />
 
 		</div>
 	</section>
