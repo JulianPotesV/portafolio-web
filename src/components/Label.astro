@@ -1,4 +1,9 @@
 ---
+export interface Props {
+	texto: string;
+	iconSrc: string;
+	alt?: string;
+}
 const { texto, iconSrc, alt = '' } = Astro.props;
 ---
 
