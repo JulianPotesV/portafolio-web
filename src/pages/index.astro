@@ -7,6 +7,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
+	<!-- hero -->
 	<section id="hero" class="flex justify-center items-center mt-[2.5rem]">
 		<div>
 			<img class="h-[43.938rem]" src="/hero-julian.png" alt="" />
@@ -29,4 +30,27 @@ import Layout from '../layouts/Layout.astro';
 			<Button texto="Currículo" iconoSrc="/icons/descarga.svg" />
 		</div>
 	</section>
+
+	<!-- Propiedades -->
+	<section class="flex justify-center items-center mt-28">
+		<div class="text-white flex max-w-[1436px] rounded-4xl border-[#1E1E1E] border-2 py-16 px-24 gap-32">
+			<span class="w-72">
+				<img src="icons/diseno.svg" class="mb-4.5">
+				<h2 class="text-4xl font-semibold text-[#FF0000] mb-8">Creativo Visual</h2>
+				<p>Transformo ideas en piezas visuales impactantes que comunican, conectan y venden.</p>
+			</span>
+			<span class="w-72">
+				<img src="icons/compu2.svg" class="mb-4.5">
+				<h2 class="text-4xl font-semibold text-[#FF0000] mb-8">Enfoque UX/UI</h2>
+				<p>Diseño experiencias centradas en el usuario, priorizando usabilidad, estética y funcionalidad.</p>
+			</span>
+			<span class="w-72">
+				<img src="icons/web.svg" class="mb-4.5">
+				<h2 class="text-4xl font-semibold text-[#FF0000] mb-8">Visión Web</h2>
+				<p>Integro diseño y desarrollo para crear sitios modernos, dinámicos y optimizados para todos los dispositivos.</p>
+			</span>
+
+		</div>
+	</section>
+
 </Layout>
