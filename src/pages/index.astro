@@ -1,6 +1,4 @@
 ---
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
 import Button from '../components/Button.astro';
 import Label from '../components/Label.astro';
 import Layout from '../layouts/Layout.astro';
@@ -83,12 +81,12 @@ import Card from '../components/Card.astro';
 
 		<!--Tarjetas -->
 		<div class="grid grid-cols-2 gap-8 mt-[8rem]">
-			<Card
+				<Card
 				title="Diseño de sitio web XmartMedia"
 				href="/images/xmartmedia.png"
 				label="UX/UI"
 				link="#"
-			/>
+				/>
 			<Card
 				title="Creación de logo y piezas gráficas Colombian Place"
 				href="/images/colombian-place.png"
@@ -165,7 +163,7 @@ import Card from '../components/Card.astro';
 	</section>
 
 	<!-- Sobre mi -->
-	<section class="mt-[4.5rem]">
+	<section class="my-[4.5rem]">
 		<div class="flex max-w-[71rem] mx-auto items-center gap-18">
 			<span>
 				<img src="/julian-sobre-mi.png" alt="" />
@@ -191,10 +189,16 @@ import Card from '../components/Card.astro';
 		</div>
 	</section>
 	<section>
-		<div class="justify-items-center bg-[url(/fondo-disenos.p.png)] bg-fixed py-24">
-			<h1 class="text-4xl font-semibold text-[#FF0000]">¿Tienes un proyecto en mente?</h1>
-			<p class="text-white font-normal mt-4 mb-16">Estoy listo para crear algo increíble contigo.</p>
-			<Button texto="Contáctame" iconoSrc="/icons/flecha-derecha.svg"/>
+		<div
+			class="justify-items-center bg-[url(/fondo-disenos.p.png)] bg-fixed py-24"
+		>
+			<h1 class="text-4xl font-semibold text-[#FF0000]">
+				¿Tienes un proyecto en mente?
+			</h1>
+			<p class="text-white font-normal mt-4 mb-16">
+				Estoy listo para crear algo increíble contigo.
+			</p>
+			<Button texto="Contáctame" iconoSrc="/icons/flecha-derecha.svg" />
 		</div>
 	</section>
 </Layout>

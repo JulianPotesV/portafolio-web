@@ -9,14 +9,12 @@ export interface Props {
 const { title, href, label, link, alt = '' } = Astro.props;
 ---
 
-<article class="rounded-[10px] bg-[#0e0e0e] px-4 pt-4 pb-4">
+<a href={link} class="rounded-[10px] bg-[#0e0e0e] px-4 pt-4 pb-4 hover:scale-[1.02] transition-all duration-300 hover:shadow-[0_0_40px_2px_rgba(255,0,0,0.5)]">
 	<img src={href} alt={alt} />
 
-	<a href={link}>
-		<h3 class="mt-4 font-semibold text-lg text-white">
+	<h3 class="mt-4 font-semibold text-lg text-white">
 			{title}
-		</h3>
-	</a>
+	</h3>
 
 	<div class="mt-4 flex flex-wrap gap-1">
 		<span
@@ -25,4 +23,4 @@ const { title, href, label, link, alt = '' } = Astro.props;
 			{label}
 		</span>
 	</div>
-</article>
+</a>
