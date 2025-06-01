@@ -8,7 +8,7 @@ const { texto, iconoSrc, alt = '' } = Astro.props;
 ---
 
 <button
-	class="flex bg-[#FF0000] items-center rounded-full gap-4 py-3 px-10 text-2xl"
+	class="flex bg-[#FF0000] hover:bg-[#B10000] transition-all duration-200 ease-in-out items-center rounded-full gap-4 py-3 px-10 text-2xl"
 >
 	<span class="text-white">{texto}</span>
 	<img src={iconoSrc} alt={alt} />
