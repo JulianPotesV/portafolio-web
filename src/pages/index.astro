@@ -113,15 +113,24 @@ import Card from '../components/Card.astro';
 	<!-- Empresas -->
 	<section class="mt-[10rem]">
 		<div class="border-y-[#1E1E1E] border-2 py-18">
-			<h1 class="text-4xl text-[#FF0000] font-semibold text-center mb-[7rem]" >Empresas que han confiado en mi trabajo</h1>
-			<div  class="relative overflow-hidden" >
+			<h1 class="text-4xl text-[#FF0000] font-semibold text-center mb-[7rem]">
+				Empresas que han confiado en mi trabajo
+			</h1>
+			<div class="relative overflow-hidden">
 				<div class="flex animate-scroll space-x-20">
-					<img src="/logos-empresas/xmart-call.svg" alt="logo Xmart Call" style="color: #3B82F6;" />
+					<img
+						src="/logos-empresas/xmart-call.svg"
+						alt="logo Xmart Call"
+						style="color: #3B82F6;"
+					/>
 					<img src="/logos-empresas/xherpa.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/xmart-fi.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/xmart-group.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/xmart-media.svg" alt="logo Xmart Call" />
-					<img src="/logos-empresas/boating-cartagena.svg" alt="logo Xmart Call" />
+					<img
+						src="/logos-empresas/boating-cartagena.svg"
+						alt="logo Xmart Call"
+					/>
 					<img src="/logos-empresas/colombina.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/gren-wave.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/levapan.svg" alt="logo Xmart Call" />
@@ -131,12 +140,15 @@ import Card from '../components/Card.astro';
 					<img src="/logos-empresas/wood.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/albania.svg" alt="logo Xmart Call" />
 
-					<img src="/logos-empresas/xmart-call.svg" alt="logo Xmart Call"/>
+					<img src="/logos-empresas/xmart-call.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/xherpa.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/xmart-fi.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/xmart-group.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/xmart-media.svg" alt="logo Xmart Call" />
-					<img src="/logos-empresas/boating-cartagena.svg" alt="logo Xmart Call" />
+					<img
+						src="/logos-empresas/boating-cartagena.svg"
+						alt="logo Xmart Call"
+					/>
 					<img src="/logos-empresas/colombina.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/gren-wave.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/levapan.svg" alt="logo Xmart Call" />
@@ -149,24 +161,51 @@ import Card from '../components/Card.astro';
 			</div>
 		</div>
 	</section>
+
+	<!-- Sobre mi -->
+	<section class="mt-[4.5rem]">
+		<div class="flex max-w-[71rem] mx-auto items-center gap-18">
+			<span>
+				<img src="/julian-sobre-mi.png" alt="" />
+			</span>
+			<span class="w-[34rem]">
+				<Label texto="Sobre mi" iconSrc="/perfil.svg"/>
+				<h2 class="text-4xl text-[#FF0000] font-semibold mt-4 mb-8">¿Por qué trabajar conmigo en tu próximo proyecto?</h2>
+				<p class="text-white mb-12">
+					Soy diseñador gráfico con una sólida trayectoria creando soluciones
+					visuales impactantes para marcas y productos. Actualmente, combino mi
+					experiencia en diseño con nuevas habilidades en desarrollo web y
+					diseño UX/UI, para ofrecer resultados visualmente atractivos,
+					funcionales y centrados en el usuario.
+					<br><br>
+					Mi enfoque es construir
+					experiencias digitales claras, modernas y efectivas. No solo diseño lo
+					que se ve bien, sino lo que realmente conecta y funciona. Cada
+					proyecto es una oportunidad para crear algo auténtico, útil y
+					memorable.
+				</p>
+				<Button texto='Conocer más' iconoSrc='/icons/flecha-derecha.svg' />
+			</span>
+		</div>
+	</section>
 </Layout>
 
 <style>
-  @keyframes scroll {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .animate-scroll {
-    animation: scroll 30s linear infinite;
-  }
-  
-  /* Pausar la animación al hacer hover */
-  .animate-scroll:hover {
-    animation-play-state: paused;
-  }
+	@keyframes scroll {
+		0% {
+			transform: translateX(0%);
+		}
+		100% {
+			transform: translateX(-100%);
+		}
+	}
+
+	.animate-scroll {
+		animation: scroll 30s linear infinite;
+	}
+
+	/* Pausar la animación al hacer hover */
+	.animate-scroll:hover {
+		animation-play-state: paused;
+	}
 </style>
