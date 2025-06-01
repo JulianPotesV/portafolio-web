@@ -9,21 +9,21 @@ import Card from '../components/Card.astro';
 
 <Layout>
 	<!-- hero -->
-	<section id="hero" class="flex justify-center items-center mt-[2.5rem]">
+	<section id="hero" class="flex justify-center items-center mt-[2.5rem] gap-8">
 		<div>
-			<img class="h-[43.938rem]" src="/hero-julian.png" alt="" />
+			<img class="h-[40rem]" src="/hero-julian.png" alt="" />
 		</div>
 
 		<div class="text-white">
 			<h2 class="text-[#FF0000] text-[3rem] leading-[0.5]">
 				Hola, mi nombre es
 			</h2>
-			<h1 class="text-[#FF0000] text-[7.438rem] font-bold">Julián Potes</h1>
-			<p class="text-[1.688rem] max-w-[35.5rem] font-normal">
+			<h1 class="text-[#FF0000] text-[7rem] font-bold">Julián Potes</h1>
+			<p class="text-[1.688rem] max-w-[34rem] font-light leading-[1.3]">
 				Soy diseñador gráfico, apasionado por crear soluciones visuales
 				funcionales y con propósito.
 			</p>
-			<div class="flex gap-4.5 mt-8.5 mb-[7rem]">
+			<div class="flex gap-4.5 mt-8.5 mb-[6rem]">
 				<Label texto="Diseño" iconSrc="/icons/pluma.svg" />
 				<Label texto="UX/UI" iconSrc="/icons/compu.svg" />
 				<Label texto="Desarrollo" iconSrc="/icons/dev.svg" />
@@ -34,42 +34,104 @@ import Card from '../components/Card.astro';
 
 	<!-- Propiedades -->
 	<section class="flex justify-center items-center mt-28">
-		<div class="text-white flex max-w-[1436px] rounded-4xl border-[#1E1E1E] border-2 py-16 px-24 gap-32">
+		<div
+			class="text-white flex max-w-[1436px] rounded-4xl border-[#1E1E1E] border-2 py-16 px-24 gap-32"
+		>
 			<span class="w-72">
-				<img src="icons/diseno.svg" class="mb-4.5">
-				<h2 class="text-4xl font-semibold text-[#FF0000] mb-8">Creativo Visual</h2>
-				<p>Transformo ideas en piezas visuales impactantes que comunican, conectan y venden.</p>
+				<img src="icons/diseno.svg" class="mb-4.5" />
+				<h2 class="text-4xl font-semibold text-[#FF0000] mb-8">
+					Creativo Visual
+				</h2>
+				<p>
+					Transformo ideas en piezas visuales impactantes que comunican,
+					conectan y venden.
+				</p>
 			</span>
 			<span class="w-72">
-				<img src="icons/compu2.svg" class="mb-4.5">
-				<h2 class="text-4xl font-semibold text-[#FF0000] mb-8">Enfoque UX/UI</h2>
-				<p>Diseño experiencias centradas en el usuario, priorizando usabilidad, estética y funcionalidad.</p>
+				<img src="icons/compu2.svg" class="mb-4.5" />
+				<h2 class="text-4xl font-semibold text-[#FF0000] mb-8">
+					Enfoque UX/UI
+				</h2>
+				<p>
+					Diseño experiencias centradas en el usuario, priorizando usabilidad,
+					estética y funcionalidad.
+				</p>
 			</span>
 			<span class="w-72">
-				<img src="icons/web.svg" class="mb-4.5">
+				<img src="icons/web.svg" class="mb-4.5" />
 				<h2 class="text-4xl font-semibold text-[#FF0000] mb-8">Visión Web</h2>
-				<p>Integro diseño y desarrollo para crear sitios modernos, dinámicos y optimizados para todos los dispositivos.</p>
+				<p>
+					Integro diseño y desarrollo para crear sitios modernos, dinámicos y
+					optimizados para todos los dispositivos.
+				</p>
 			</span>
-
 		</div>
 	</section>
 
 	<!-- Proyectos -->
 	<section class="max-w-[71rem] mx-auto mt-32">
 		<div class="text-white flex place-content-between">
-			<h1 class="text-[#FF0000] text-4xl font-semibold">Algunos de mis trabajos</h1>
+			<h1 class="text-[#FF0000] text-4xl font-semibold">
+				Algunos de mis trabajos
+			</h1>
 			<Button texto="Ver todos" iconoSrc="/icons/flecha-derecha.svg" />
 		</div>
-		<p class="text-white w-96">Un vistazo a los proyectos más representativos de mi recorrido profesional.</p>
+		<p class="text-white w-96">
+			Un vistazo a los proyectos más representativos de mi recorrido
+			profesional.
+		</p>
 
 		<!--Tarjetas -->
 		<div class="grid grid-cols-2 gap-8 mt-[8rem]">
-			<Card title='Diseño de sitio web XmartMedia' href='/images/xmartmedia.png' label='UX/UI' link='#' /> 
-			<Card title="Creación de logo y piezas gráficas Colombian Place" href='/images/colombian-place.png' label='Diseño' link='#' />
-			<Card title="Propuesta de branding corporativo Xherpa" href='/images/xherpa.png' label='Diseño' link='#' />
-			<Card title="Diseño sitio web Boating Cartagena" href='/images/boating-cartagena.png' label='UX/UI' link='#' />
-
+			<Card
+				title="Diseño de sitio web XmartMedia"
+				href="/images/xmartmedia.png"
+				label="UX/UI"
+				link="#"
+			/>
+			<Card
+				title="Creación de logo y piezas gráficas Colombian Place"
+				href="/images/colombian-place.png"
+				label="Diseño"
+				link="#"
+			/>
+			<Card
+				title="Propuesta de branding corporativo Xherpa"
+				href="/images/xherpa.png"
+				label="Diseño"
+				link="#"
+			/>
+			<Card
+				title="Diseño sitio web Boating Cartagena"
+				href="/images/boating-cartagena.png"
+				label="UX/UI"
+				link="#"
+			/>
 		</div>
 	</section>
 
+	<!-- Empresas -->
+	<section>
+		<div>
+			<h1>Empresas que han confiado en mi trabajo</h1>
+			<div  class="overflow-hidden py-4">
+				<div class="flex animate-slide whitespace-nowrap gap-12 fill-yellow-400">
+					<img src="/logos-empresas/xmart-call.svg" alt="logo Xmart Call" class="fill-white" />
+					<img src="/logos-empresas/xherpa.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/xmart-fi.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/xmart-group.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/xmart-media.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/boating-cartagena.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/colombina.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/gren-wave.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/levapan.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/max-produce.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/ultra.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/vast.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/wood.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/albania.svg" alt="logo Xmart Call" />
+				</div>
+			</div>
+		</div>
+	</section>
 </Layout>
