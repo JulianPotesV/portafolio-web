@@ -111,12 +111,27 @@ import Card from '../components/Card.astro';
 	</section>
 
 	<!-- Empresas -->
-	<section>
-		<div>
-			<h1>Empresas que han confiado en mi trabajo</h1>
-			<div  class="overflow-hidden py-4">
-				<div class="flex animate-slide whitespace-nowrap gap-12 fill-yellow-400">
-					<img src="/logos-empresas/xmart-call.svg" alt="logo Xmart Call" class="fill-white" />
+	<section class="mt-[10rem]">
+		<div class="border-y-[#1E1E1E] border-2 py-18">
+			<h1 class="text-4xl text-[#FF0000] font-semibold text-center mb-[7rem]" >Empresas que han confiado en mi trabajo</h1>
+			<div  class="relative overflow-hidden" >
+				<div class="flex animate-scroll space-x-20">
+					<img src="/logos-empresas/xmart-call.svg" alt="logo Xmart Call" style="color: #3B82F6;" />
+					<img src="/logos-empresas/xherpa.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/xmart-fi.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/xmart-group.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/xmart-media.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/boating-cartagena.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/colombina.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/gren-wave.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/levapan.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/max-produce.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/ultra.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/vast.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/wood.svg" alt="logo Xmart Call" />
+					<img src="/logos-empresas/albania.svg" alt="logo Xmart Call" />
+
+					<img src="/logos-empresas/xmart-call.svg" alt="logo Xmart Call"/>
 					<img src="/logos-empresas/xherpa.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/xmart-fi.svg" alt="logo Xmart Call" />
 					<img src="/logos-empresas/xmart-group.svg" alt="logo Xmart Call" />
@@ -135,3 +150,23 @@ import Card from '../components/Card.astro';
 		</div>
 	</section>
 </Layout>
+
+<style>
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  
+  /* Pausar la animación al hacer hover */
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+</style>
