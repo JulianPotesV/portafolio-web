@@ -2,34 +2,36 @@
 
 ---
 
-<div class="bg-black px-[15rem]">
-	<div class="pt-40 flex place-content-between">
-		<div>
-			<img src="/logo-julian-potes.svg" alt="logotipo julian potes" />
-			<div class="flex mt-8 gap-2">
-				<img src="/insta.svg" alt="" />
-				<img src="/behance.svg" alt="" />
-				<img src="/linkedin.svg" alt="" />
-				<img src="/github.svg" alt="" />
-				<img src="/mail.svg" alt="" />
+<div class="bg-black px-4 sm:px-8 md:px-16 lg:px-32 xl:px-60">
+	<div class="pt-20 md:pt-40 flex flex-col md:flex-row md:place-content-between gap-8 md:gap-0">
+		<div class="flex flex-col items-center md:items-start">
+			<img src="/logo-julian-potes.svg" alt="logotipo julian potes" class="h-8 md:h-auto" />
+			<div class="flex mt-6 md:mt-8 gap-2 justify-center md:justify-start">
+				<img src="/insta.svg" alt="Instagram" class="w-6 h-6 hover:opacity-80 transition-opacity cursor-pointer" />
+				<img src="/behance.svg" alt="Behance" class="w-6 h-6 hover:opacity-80 transition-opacity cursor-pointer" />
+				<img src="/linkedin.svg" alt="LinkedIn" class="w-6 h-6 hover:opacity-80 transition-opacity cursor-pointer" />
+				<img src="/github.svg" alt="GitHub" class="w-6 h-6 hover:opacity-80 transition-opacity cursor-pointer" />
+				<img src="/mail.svg" alt="Email" class="w-6 h-6 hover:opacity-80 transition-opacity cursor-pointer" />
 			</div>
 		</div>
-		<div class="flex text-[#515151] gap-8">
-			<a href="">Inicio</a>
-			<a href="">Sobre mi</a>
-			<a href="">Proyectos</a>
-			<a href="">Contacto</a>
-			<a href="">Politica de privacidad</a>
+		
+		<!-- Navegación responsive -->
+		<div class="flex flex-col sm:flex-row text-[#515151] gap-4 sm:gap-6 lg:gap-8 text-center md:text-left">
+			<a href="" class="hover:text-white transition-colors text-sm md:text-base">Inicio</a>
+			<a href="" class="hover:text-white transition-colors text-sm md:text-base">Sobre mi</a>
+			<a href="" class="hover:text-white transition-colors text-sm md:text-base">Proyectos</a>
+			<a href="" class="hover:text-white transition-colors text-sm md:text-base">Contacto</a>
+			<a href="" class="hover:text-white transition-colors text-sm md:text-base">Política de privacidad</a>
 		</div>
 	</div>
 
-	<div>
-		<hr class="border-[#FF0000] mt-18" />
+	<div class="mt-12 md:mt-18">
+		<hr class="border-[#FF0000]" />
 	</div>
+	
 	<div>
-		<p class="text-[#515151] text-center py-4">
-			© 2025 Diseñado y desarrollado por Julián Potes - Todos los derechos
-			reservados.
+		<p class="text-[#515151] text-center py-4 text-sm md:text-base px-4">
+			© 2025 Diseñado y desarrollado por Julián Potes - Todos los derechos reservados.
 		</p>
 	</div>
 </div>
