@@ -5,12 +5,14 @@ export interface Props {
 	link: string;
 	label: string;
 	alt?: string;
+	description?: string;
+	slug?: string;
 }
-const { title, href, label, link, alt = '' } = Astro.props;
+const { title, href, label, link, alt = '', description = '', slug } = Astro.props;
 ---
 
 <a
-	href={link}
+	href={`/proyectos/${slug}`}
 	class="rounded-[10px] bg-[#0e0e0e] px-4 pt-4 pb-4 hover:scale-[1.04] duration-300 ease-in-out hover: border-[#525252] hover:border"
 >
 	<img src={href} alt={alt} />
@@ -18,6 +20,9 @@ const { title, href, label, link, alt = '' } = Astro.props;
 	<h3 class="mt-4 font-semibold text-lg text-white">
 		{title}
 	</h3>
+	<p class="text-white text-sm mt-2">
+		{description ? description : 'Descripción del proyecto no disponible.'}
+	</p>
 
 	<div class="mt-4 flex flex-wrap gap-1">
 		<span
