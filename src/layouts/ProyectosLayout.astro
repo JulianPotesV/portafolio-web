@@ -1,0 +1,127 @@
+---
+import Gallery from '../components/Galeria-imagenes.astro';
+
+const imagenes = [
+  {
+    src: '../public/images/proyectos/xmartmedia-1.png',
+    width: 1200,
+    height: 674,
+    alt: 'Proyecto XmartMedia',
+  },
+  {
+    src: '../public/images/proyectos/xmartmedia-2.png',
+    width: 1200,
+    height: 674,
+    alt: 'Proyecto 2',
+  },
+
+  {
+    src: '../public/images/proyectos/xmartmedia-3.png',
+    width: 1200,
+    height: 674,
+    alt: 'Proyecto 3',
+  },
+  {
+    src: '../public/images/proyectos/xmartmedia-4.png',
+    width: 1200,
+    height: 674,
+    alt: 'Proyecto 4',
+  },
+
+
+
+  // agrega más si quieres
+];
+---
+
+<section>
+    <h1 class="text-[var(--rojo-principal)] text-7xl font-bold text-center mt-24">
+        Diseño Sitio Web XmartMedia
+    </h1>
+    <div class="max-w-[50rem] mx-auto mt-8 text-center">
+        <p class="text-white text-lg">
+            Un sitio web corporativo enfocado en la presentación clara de servicios digitales, 
+            con diseño responsive, estructura optimizada para SEO y experiencia de usuario orientada
+            a la conversión.
+        </p>
+    </div>
+    <div class="flex items-center justify-center mt-24">
+        <img src="/images/proyecto-xmartmedia.png" alt="">
+    </div>
+</section>
+
+<section class="mt-32">
+    <div class="flex max-w-[88rem] mx-auto space-x-24">
+        <div>
+            <h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">Diseño sitio Web</h2>
+            <p class="text-white text-lg">
+                XmartMedia fue una empresa de marketing digital especializada en ofrecer soluciones
+                digitales a medida para otras empresas. Me encargaron el diseño de su nuevo sitio web
+                corporativo con el objetivo de transmitir modernidad, comunicar con claridad su oferta 
+                de servicios y mejorar la experiencia de navegación.
+            </p>
+            <p class="text-white text-lg mt-4">
+                El reto principal era transformar su antiguo sitio en una plataforma visualmente atractiva,
+                profesional y funcional, optimizada para usuarios tanto en escritorio como en móvil.
+            </p>
+            <h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mt-16 mb-8">Características Principales</h2>
+            <ul class="text-white text-lg">
+                <li>- Diseño responsive adaptable a todos los dispositivos (desktop, tablet y móvil).</li>
+                <li>- Arquitectura de información optimizada, con navegación clara y jerarquía visual.</li>
+                <li>- Interfaz moderna y profesional, alineada con el sector tecnológico y digital.</li>
+                <li>- Página de servicios segmentada, diseñada para facilitar la comprensión de cada solución ofrecida.</li>
+                <li>- Carga rápida y rendimiento optimizado, gracias al uso de tecnologías web modernas.</li>
+            </ul>
+
+        </div>
+        <div>
+            <div class="border border-[var(--rojo-principal)] text p-8 min-w-96 rounded-lg">
+                <h4 class="text-[var(--rojo-principal)] text-2xl">Detalles del proyecto</h4>
+
+                <p class="text-white text-lg mt-4">Fecha</p>
+                <p class="text-[#666666]">Marzo 2024</p>
+                <hr class="border-[#666666] my-4" />
+
+                <p class="text-white">Cliente</p>
+                <p class="text-[#666666]">XmartMedia</p>
+                <hr class="border-[#666666] my-4" />
+
+                <p class="text-white">Rol</p>
+                <p class="text-[#666666]">Diseñador UX/UI</p>
+                <hr class="border-[#666666] my-4" />
+
+                <p class="text-white">Duración</p>
+                <p class="text-[#666666]">2 semanas</p>
+                <hr class="border-[#666666] my-4" />
+
+                <p class="text-white">Herramientas</p>
+                <p class="text-[#666666]">Figma, Illustrator</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class=" max-w-[88rem] mx-auto mt-16">
+    <h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">Galería</h2>
+    <div>
+    <Gallery images={imagenes} />
+    </div>
+</section>
+
+<section>
+    
+    <div class="flex justify-center mt-28 gap-4">
+        <button class="flex bg-[#000000] border border-[var(--rojo-principal)] hover:bg-[#1a1a1a] transition-all duration-200 ease-in-out items-center rounded-full gap-4 py-3 px-19 text-2xl">
+            <img src="/public/icons/flecha-izquierda.svg"alt="behance" />
+            <span class="text-white"> Volver a Proyectos</span>
+        </button>
+
+        <button class="flex bg-[#053EFF] hover:bg-[#00249F] transition-all duration-200 ease-in-out items-center rounded-full gap-4 py-3 px-10 text-2xl">
+            <span class="text-white"> Ver más de este proyecto</span>
+            <img src="/public/icons/behance.svg"alt="behance" />
+        </button>
+    </div>
+
+    </div>
+</section>

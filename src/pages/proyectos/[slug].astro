@@ -1,0 +1,24 @@
+---
+
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProyectosLayout from "../../layouts/ProyectosLayout.astro";
+
+export async function getStaticPaths() {
+	const proyectos = await getCollection("proyectos-md");
+
+	return proyectos.map((proyecto) => ({
+		params: { slug: proyecto.slug },
+		props: { proyecto },
+	}));
+}
+
+const { proyecto } = Astro.props;
+const { Content } = await proyecto.render();
+
+---
+<BaseLayout>
+	<ProyectosLayout>
+		<Content />
+	</ProyectosLayout>
+</BaseLayout>

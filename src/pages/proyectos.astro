@@ -1,7 +1,7 @@
 ---
 import Button from '../components/Button.astro';
 import Label from '../components/Label.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
 
 ---
@@ -25,6 +25,7 @@ import Card from '../components/Card.astro';
                 label="UX/UI"
                 link="#"
                 description='Un sitio web corporativo enfocado en la presentación clara de servicios digitales, con diseño responsive, estructura optimizada para SEO y experiencia de usuario orientada a la conversión.'
+                slug='xmartmedia'
             />
 
             <Card
@@ -33,12 +34,13 @@ import Card from '../components/Card.astro';
                 label="UX/UI"
                 link="#"
                 description='Identidad visual para una empresa tecnológica enfocada en soluciones digitales, con una propuesta gráfica moderna, versátil y orientada a comunicar innovación y cercanía en entornos digitales.'
+                slug='xherpa'
             />
         </div>
     </div>
 
     <div class="max-w-[71rem] pt-16">
-        <h2 class="text-[var(--rojo-principal)] text-4xl font-semibold">Proyectos destacados</h2>
+        <h2 class="text-[var(--rojo-principal)] text-4xl font-semibold">Otros proyectos</h2>
         <div class="grid grid-cols-3 gap-8 mt-8">
             <Card
                 title="Marca Colombian’s Place"
@@ -46,6 +48,7 @@ import Card from '../components/Card.astro';
                 label="Diseño Gráfico"
                 link="#"
                 description='Una identidad visual diseñada para transmitir el sabor y la tradición de la comida colombiana en el exterior, con un enfoque en branding auténtico, aplicación en piezas digitales y coherencia visual en todos los puntos de contacto de la marca.'
+                slug='colombian-place'
             />
 
             <Card
@@ -54,7 +57,8 @@ import Card from '../components/Card.astro';
                 label="UX/UI"
                 link="#"
                 description='Una propuesta visual fresca y sofisticada para una empresa de alquiler de yates en Cartagena, enfocada en destacar la exclusividad del servicio a través de un diseño limpio, identidad elegante y comunicación visual orientada al turismo premium.'
-            />
+                slug='boating-cartagena'
+            />  
 
             <Card
                 title="Marca Dentinnova"
@@ -62,6 +66,7 @@ import Card from '../components/Card.astro';
                 label="Diseño Gráfico"
                 link="#"
                 description='Una identidad visual moderna y profesional para una clínica odontológica en Tuluá, diseñada para transmitir confianza, limpieza y cercanía. El proyecto incluyó el desarrollo de logotipo, paleta de colores, tipografía y piezas gráficas aplicadas a medios físicos y digitales.'
+                slug='dentinnova'
             />
 
             <Card
@@ -70,6 +75,7 @@ import Card from '../components/Card.astro';
                 label="UX/UI"
                 link="#"
                 description='Sitio web para Max Produce, empresa dedicada a la distribución de limones frescos. Un diseño limpio y responsive enfocado en resaltar la calidad del producto y facilitar el contacto comercial.'
+                slug='max-produce'
             />
 
             <Card
@@ -78,6 +84,7 @@ import Card from '../components/Card.astro';
                 label="Diseño Gráfico"
                 link="#"
                 description='Desarrollo de identidad visual para INAF, constructora enfocada en la venta de lotes y viviendas. La marca transmite confianza, estabilidad y crecimiento, con una propuesta gráfica adaptable a medios impresos y digitales.'
+                slug='inaf'
             />
 
             <Card
@@ -85,18 +92,18 @@ import Card from '../components/Card.astro';
                 href="/images/xmartfi.png"
                 label="UX/UI"
                 link="#"
-                description='Rediseño del sitio web para XmartFi, proveedor de internet rural en EE. UU. El proyecto se enfocó en mejorar la experiencia del usuario, modernizar la interfaz y comunicar con claridad los servicios a comunidades en zonas remotas.'
-            />
+                description='Rediseño del sitio web para XmartFi, proveedor de internet rural en EE.UU. El proyecto se enfocó en mejorar la experiencia del usuario, modernizar la interfaz y comunicar con claridad los servicios a comunidades en zonas remotas.'
+                slug='xmartfi'
+            />  
         </div>
     </div>
 </section>
 
 <div class="flex justify-center mt-16">
     <button
-        class="flex bg-[#053EFF] hover:bg-[#00249F] transition-all duration-200 ease-in-out items-center rounded-full gap-4 py-3 px-10 text-2xl"
-    >
+        class="flex bg-[#053EFF] hover:bg-[#00249F] transition-all duration-200 ease-in-out items-center rounded-full gap-4 py-3 px-10 text-2xl">
         <span class="text-white"> Ver Más </span>
-        <img src="/public/icons/behance.svg"alt="" />
+        <img src="/public/icons/behance.svg"alt="behance" />
     </button>
 </div>
 

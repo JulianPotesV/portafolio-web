@@ -1,0 +1,35 @@
+---
+// props: recibe una lista de imágenes
+const { images = [] } = Astro.props;
+---
+
+<!-- PhotoSwipe styles -->
+<link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" />
+
+<div class="flex flex-wrap gap-4" class="gallery" id="galeria-proyectos">
+  {images.map((img) => (
+    <a
+      href={img.src}
+      data-pswp-width={img.width}
+      data-pswp-height={img.height}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img src={img.src} alt={img.alt || ''} class="w-[472.70px] mb-4 transition-transform hover:scale-102 rounded-lg" loading="lazy" />
+    </a>
+  ))}
+</div>
+
+<!-- Lightbox Script -->
+<script type="module">
+  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#galeria-proyectos',
+    children: 'a',
+    pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.min.js')
+  });
+  lightbox.init();
+</script>
+
+
