@@ -1,21 +1,21 @@
 ---
-titulo: "Diseño Sitio Web XmartMedia"
-slug: "xmartmedia"
-descripcion: "Un sitio web corporativo enfocado en la presentación clara de servicios digitales, con diseño responsive, estructura optimizada para SEO y experiencia de usuario orientada a la conversión."
-imagen: "../public/images/proyecto-xmartmedia.png"
-fecha: "Marzo 2024"
-cliente: "XmartMedia"
+titulo: 'Diseño Sitio Web XmartMedia'
+slug: 'xmartmedia'
+descripcion: 'Un sitio web corporativo enfocado en la presentación clara de servicios digitales, con diseño responsive, estructura optimizada para SEO y experiencia de usuario orientada a la conversión.'
+imagen: '../public/images/proyecto-xmartmedia.png'
+fecha: 'Marzo 2024'
+cliente: 'XmartMedia'
 rol: Diseñador UX/UI
-duracion: "2 semanas"
-herramientas: "Figma, Ilustrator"
-imagenGaleria1: "../public/images/proyectos/xmartmedia-1.png"
-imagenGaleria2: "../public/images/proyectos/xmartmedia-2.png"
-imagenGaleria3: "../public/images/proyectos/xmartmedia-3.png"
-imagenGaleria4: "../public/images/proyectos/xmartmedia-4.png"
-behance: "https://www.behance.net/gallery/226759589/Sitio-Web-XmartMedia-(Miami-USA-2024)"
-layout: "../../layouts/ProyectosLayout.astro"
-
+duracion: '2 semanas'
+herramientas: 'Figma, Ilustrator'
+imagenGaleria1: '../public/images/proyectos/xmartmedia-1.png'
+imagenGaleria2: '../public/images/proyectos/xmartmedia-2.png'
+imagenGaleria3: '../public/images/proyectos/xmartmedia-3.png'
+imagenGaleria4: '../public/images/proyectos/xmartmedia-4.png'
+behance: 'https://www.behance.net/gallery/226759589/Sitio-Web-XmartMedia-(Miami-USA-2024)'
+layout: '../../layouts/ProyectosLayout.astro'
 ---
+
 <h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">
 				Diseño sitio Web
 			</h2>
