@@ -1,5 +1,4 @@
 ---
-
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProyectosLayout from "../../layouts/ProyectosLayout.astro";
@@ -15,10 +14,10 @@ export async function getStaticPaths() {
 
 const { proyecto } = Astro.props;
 const { Content } = await proyecto.render();
-
 ---
+
 <BaseLayout>
-	<ProyectosLayout>
+	<ProyectosLayout proyecto={proyecto}>
 		<Content />
 	</ProyectosLayout>
 </BaseLayout>
