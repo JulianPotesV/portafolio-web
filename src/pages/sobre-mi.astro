@@ -1,0 +1,92 @@
+---
+import Button from '../components/Button.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout sinPaddingTop={true}>
+	<div class="bg-[url(../public/images/fondo-sobre-mi.png)] bg-no-repeat">
+		<section class="flex flex-col items-center gap-4 pt-40">
+			<img class="w-72"
+				src="../public/images/foto-sobre-mi.png"
+				alt="Foto de Julián Potes"
+			/>
+			<h1 class="text-8xl font-bold text-[var(--rojo-principal)]">Julián Potes</h1>
+			<p class="text-white text-3xl w-[911px] text-center">
+				Diseñador gráfico que combina lo visual con lo funcional para crear
+				experiencias memorables.
+			</p>
+		</section>
+		<section class="flex flex-col items-center mt-18">
+			<div class="bg-[rgba(30,30,30,0.70)] w-[1144px] p-18 rounded-3xl">
+				<h2 class="text-4xl font-semibold text-[var(--rojo-principal)] mb-4">Sobre mi</h2>
+				<p class="text-white text-lg">
+					Hola, soy Julián Potes, diseñador gráfico con más de nueve años de
+					experiencia creando soluciones visuales que combinan estética,
+					funcionalidad y propósito. A lo largo de mi carrera he trabajado con
+					marcas de diversos sectores como tecnología, salud, alimentación y
+					entretenimiento, desarrollando identidades visuales, campañas
+					gráficas, piezas editoriales y contenido digital que conecte con las
+					personas y refuerce el mensaje de cada marca.
+				</p>
+                <br>
+				<p class="text-white text-lg">
+					En los últimos años, he expandido mi perfil hacia el diseño de
+					interfaces (UI/UX) y el desarrollo web, integrando nuevas herramientas
+					y metodologías centradas en la experiencia del usuario. Esto me ha
+					permitido abordar proyectos digitales de forma más estratégica, desde
+					la conceptualización gráfica hasta la implementación funcional,
+					siempre buscando soluciones claras, intuitivas y alineadas con los
+					objetivos del cliente.
+				</p>
+
+				<h2 class="text-4xl font-semibold text-[var(--rojo-principal)] mt-16 mb-4">En lo que creo</h2>
+				<h3 class="font-semibold text-white  text-2xl mb-4">Diseñar es pensar con las manos</h3>
+				<p class="text-white text-lg">
+					Creo en el diseño como una herramienta poderosa para contar historias,
+					resolver problemas y generar valor. Me apasiona lo que hago y me
+					involucro en cada proyecto con compromiso, creatividad y atención al
+					detalle. Para mí, cada proyecto es una oportunidad de construir algo
+					que sea funcional, estético y con propósito.
+				</p>
+
+				<h2 class="text-4xl font-semibold text-[var(--rojo-principal)] mt-16 mb-4">Qué hago</h2>
+				<h3 class="font-semibold text-white text-2xl mb-4">Un puente entre la idea y el impacto</h3>
+				<ul class="text-white text-lg">
+					<li>
+						- Diseño gráfico: identidad visual, branding, editorial, publicidad.
+					</li>
+					<li>
+						- Diseño UX/UI: interfaces intuitivas, prototipado, wireframes, diseño
+						centrado en el usuario.
+					</li>
+					<li>
+						- Desarrollo web: diseño y montaje de sitios web, enfoque responsive,
+						rendimiento y SEO básico.
+					</li>
+					<li>
+						- Estrategia visual: acompañamiento creativo para marcas y
+						emprendedores.
+					</li>
+				</ul>
+
+				<h2 class="text-4xl font-semibold text-[var(--rojo-principal)] mt-16 mb-4">Mi estilo de trabajo</h2>
+				<h3 class="font-semibold text-white text-2xl mb-4">Cercano, comprometido y adaptable</h3>
+				<p class="text-white text-lg">
+					Me gusta trabajar de forma colaborativa, entender a fondo cada
+					necesidad y aportar soluciones visuales claras, coherentes y
+					memorables. Siempre estoy explorando nuevas herramientas y tendencias
+					para seguir evolucionando.
+				</p>
+			</div>
+		</section>
+		<section class="flex flex-col items-center gap-8 mt-16">
+			<h2 class="text-4xl font-semibold text-[var(--rojo-principal)]">¿Trabajamos juntos?</h2>
+			<p class="text-white text-lg text-center w-[911px]">
+				Estoy siempre abierto a nuevas ideas, colaboraciones y proyectos que
+				desafíen lo convencional. Si crees que mi perfil puede aportar valor a
+				lo que tienes en mente, hagámoslo realidad juntos.
+			</p>
+			<Button texto="Ver todos" iconoSrc="/icons/flecha-derecha.svg" />
+		</section>
+	</div>
+</BaseLayout>
