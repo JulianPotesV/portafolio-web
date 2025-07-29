@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout>
+        <div class="flex justify-center gap-x-16 mt-32">
+            <div>
+                <img src="../public/images/julian-404.svg" alt="Vector de Julian Potes pagina 404">
+            </div>
+
+            <div class="flex flex-col">
+                <h2 class="text-[var(--rojo-principal)] font-bold text-8xl">404</h2>
+                <h3 class="text-[var(--rojo-principal)] font-semibold text-4xl">¡Ups! Esta página no existe</h3>
+                <p class="text-white text-lg w-[440px] mt-4">
+                    Parece que te perdiste entre pixeles y líneas de código. Pero no te preocupes,
+                    podemos volver al buen diseño.
+                </p>
+                <div class="flex mt-16">
+                    <Button texto="Volver al inicio" iconoSrc="/icons/flecha-derecha.svg"/>
+                </div>
+            </div>
+        </div>
+</BaseLayout>

@@ -1,0 +1,53 @@
+---
+
+---
+<form
+  action="https://formsubmit.co/cd6fea950d4b0331d83275f2cb0eae95"
+  method="POST"
+  class="flex flex-col gap-4 bg-[#1E1E1E] p-8 rounded-xl w-[681px] max-w-xl mx-auto"
+>
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_next" value="https://julianpotes.com/" />
+
+  <h2 class="text-[var(--rojo-principal)] text-3xl font-semibold">Envíame un mensaje</h2>
+  <p class="text-white text-lg">Completa el formulario y te responderé lo antes posible</p>
+
+  <input
+    type="text"
+    name="nombre"
+    placeholder="Tu nombre"
+    required
+    class="p-3 rounded-md bg-black text-white placeholder-gray-400"
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Tu correo electrónico"
+    required
+    class="p-3 rounded-md bg-black text-white placeholder-gray-400"
+  />
+
+  <input
+    type="text"
+    name="asunto"
+    placeholder="Asunto"
+    required
+    class="p-3 rounded-md bg-black text-white placeholder-gray-400"
+  />
+
+  <textarea
+    name="mensaje"
+    rows="5"
+    placeholder="Tu mensaje"
+    required
+    class="p-3 rounded-md bg-black text-white placeholder-gray-400"
+  ></textarea>
+
+  <button
+    type="submit"
+    class="bg-[var(--rojo-principal)] text-white px-6 py-3 rounded-md font-semibold hover:bg-red-600 transition"
+  >
+    Enviar mensaje
+  </button>
+</form>
