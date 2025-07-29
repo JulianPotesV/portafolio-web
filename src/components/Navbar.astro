@@ -1,32 +1,51 @@
 ---
-
+const currentPath = Astro.url.pathname;
 ---
 
 <div class="flex justify-center items-center fixed top-0 left-0 w-full z-50">
 	<div
 		class="bg-[#1E1E1E]/60 flex items-center rounded-full mt-8 backdrop-blur"
 	>
-		<a href="/"><img
-			src="/icono-julian-potes.svg"
-			alt="icono julian potes"
-			class="mx-2 my-2 transition-transform duration-300 hover:scale-105"
-		/></a>
+		<a href="/"
+			><img
+				src="/icono-julian-potes.svg"
+				alt="icono julian potes"
+				class="mx-2 my-2 transition-transform duration-300 hover:scale-105"
+			/></a
+		>
 		<div class="text-white ml-5">
 			<a
 				href="/proyectos"
-				class="hover:bg-[#3B3B3B] focus:bg-[#FF0000] hover:text-white hover:rounded-full ease-in-out duration-300 px-4 py-2"
-				>Proyectos</a
+				class={`${
+					currentPath === '/proyectos'
+						? 'bg-[var(--rojo-principal)] text-white rounded-full'
+						: ''
+				} hover:bg-[#3B3B3B] hover:text-white hover:rounded-full ease-in-out duration-300 px-4 py-2`}
 			>
+				Proyectos
+			</a>
+
 			<a
 				href="/sobre-mi"
-				class="hover:bg-[#3B3B3B] hover:text-white hover:rounded-full ease-in-out duration-300 ml-5 px-4 py-2"
-				>Sobre mi</a
+				class={`${
+					currentPath === '/sobre-mi'
+						? 'bg-[var(--rojo-principal)] text-white rounded-full'
+						: ''
+				} hover:bg-[#3B3B3B] hover:text-white hover:rounded-full ease-in-out duration-300 ml-5 px-4 py-2`}
 			>
+				Sobre mí
+			</a>
+
 			<a
 				href="/contacto"
-				class="hover:bg-[#3B3B3B] hover:text-white hover:rounded-full ease-in-out duration-300 ml-5 mr-10 px-4 py-2"
-				>Contacto</a
+				class={`${
+					currentPath === '/contacto'
+						? 'bg-[var(--rojo-principal)] text-white rounded-full'
+						: ''
+				} hover:bg-[#3B3B3B] hover:text-white hover:rounded-full ease-in-out duration-300 ml-5 mr-10 px-4 py-2`}
 			>
+				Contacto
+			</a>
 		</div>
 	</div>
 </div>
