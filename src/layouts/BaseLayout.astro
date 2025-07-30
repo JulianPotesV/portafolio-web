@@ -12,6 +12,7 @@ const { sinPaddingTop = false } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 
 		<!-- Goole fonts -->
@@ -31,5 +32,11 @@ const { sinPaddingTop = false } = Astro.props;
 			<slot />
 		</main>
 		<Footer />
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		import Aos from "aos";
+
+  		Aos.init();
+	</script>
 	</body>
 </html>
