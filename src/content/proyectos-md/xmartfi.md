@@ -16,7 +16,7 @@ behance: 'https://www.behance.net/gallery/226642649/Sitio-Web-XmartFi-(Miami-USA
 layout: '../../layouts/ProyectosLayout.astro'
 ---
 
-<h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">
+<h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mb-8">
 				Diseño sitio Web
 			</h2>
 			<p class="text-white text-lg">
@@ -34,24 +34,24 @@ layout: '../../layouts/ProyectosLayout.astro'
                  moderna y alineada con el público objetivo.
 			</p>
 			<h2
-				class="text-[var(--rojo-principal)] text-4xl font-semibold mt-16 mb-8"
+				class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mt-16 mb-8"
 			>
 				Características Principales
 			</h2>
-			<ul class="text-white text-lg">
+			<ul class="text-white text-lg list-disc pl-5 space-y-4">
 				<li>
-					- Rediseño completo de la interfaz con enfoque en conversión y claridad en la propuesta de valor.
+					Rediseño completo de la interfaz con enfoque en conversión y claridad en la propuesta de valor.
 				</li>
 				<li>
-					- Arquitectura de información optimizada para una navegación fluida y jerárquica.
+					Arquitectura de información optimizada para una navegación fluida y jerárquica.
 				</li>
 				<li>
-					- Diseño responsive adaptable a todos los dispositivos (desktop, tablet y móvil).
+					Diseño responsive adaptable a todos los dispositivos (desktop, tablet y móvil).
 				</li>
 				<li>
-					- Estilo visual coherente con una marca confiable, cercana y enfocada en tecnología accesible.
+					Estilo visual coherente con una marca confiable, cercana y enfocada en tecnología accesible.
 				</li>
 				<li>
-					- Optimización del flujo de adquisición del servicio con llamados a la acción estratégicos.
+					Optimización del flujo de adquisición del servicio con llamados a la acción estratégicos.
 				</li>
 			</ul>

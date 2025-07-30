@@ -16,7 +16,7 @@ behance: 'https://www.behance.net/gallery/226759589/Sitio-Web-XmartMedia-(Miami-
 layout: '../../layouts/ProyectosLayout.astro'
 ---
 
-<h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">
+<h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mb-8">
 				Diseño sitio Web
 			</h2>
 			<p class="text-white text-lg">
@@ -32,29 +32,29 @@ layout: '../../layouts/ProyectosLayout.astro'
 				tanto en escritorio como en móvil.
 			</p>
 			<h2
-				class="text-[var(--rojo-principal)] text-4xl font-semibold mt-16 mb-8"
+				class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mt-16 mb-8"
 			>
 				Características Principales
 			</h2>
-			<ul class="text-white text-lg">
+			<ul  class="text-white text-lg list-disc pl-5 space-y-4">
 				<li>
-					- Diseño responsive adaptable a todos los dispositivos (desktop,
+					Diseño responsive adaptable a todos los dispositivos (desktop,
 					tablet y móvil).
 				</li>
 				<li>
-					- Arquitectura de información optimizada, con navegación clara y
+					Arquitectura de información optimizada, con navegación clara y
 					jerarquía visual.
 				</li>
 				<li>
-					- Interfaz moderna y profesional, alineada con el sector tecnológico y
+					Interfaz moderna y profesional, alineada con el sector tecnológico y
 					digital.
 				</li>
 				<li>
-					- Página de servicios segmentada, diseñada para facilitar la
+					Página de servicios segmentada, diseñada para facilitar la
 					comprensión de cada solución ofrecida.
 				</li>
 				<li>
-					- Carga rápida y rendimiento optimizado, gracias al uso de tecnologías
+					Carga rápida y rendimiento optimizado, gracias al uso de tecnologías
 					web modernas.
 				</li>
 			</ul>

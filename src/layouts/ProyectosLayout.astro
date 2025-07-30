@@ -48,8 +48,8 @@ const imagenes = [
 ];
 ---
 
-<section>
-	<h1 class="text-[var(--rojo-principal)] text-7xl font-bold text-center mt-24">
+<section class="px-6">
+	<h1 class="text-[var(--rojo-principal)] text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center mt-8 md:mt-24">
 		{titulo}
 	</h1>
 	<div class="max-w-[50rem] mx-auto mt-8 text-center">
@@ -57,13 +57,13 @@ const imagenes = [
 			{descripcion}
 		</p>
 	</div>
-	<div class="flex items-center justify-center mt-24">
+	<div class="flex items-center justify-center mt-12 md:mt-24">
 		<img src={imagen} alt={titulo} />
 	</div>
 </section>
 
-<section class="mt-32">
-	<div class="flex max-w-[88rem] mx-auto space-x-24">
+<section class="mt-16 md:mt-32 px-6">
+	<div class="flex flex-col md:flex-row max-w-[88rem] mx-auto space-y-8 md:space-y-0 md:space-x-24">
 
 		<div id="descripcion-proyecto">
 			<Content />
@@ -100,8 +100,8 @@ const imagenes = [
 	</div>
 </section>
 
-<section class="max-w-[88rem] mx-auto mt-16">
-	<h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">
+<section class="max-w-[88rem] mx-auto mt-16 px-6">
+	<h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mb-8">
 		Galería
 	</h2>
 	<div>
@@ -110,19 +110,27 @@ const imagenes = [
 </section>
 
 <section>
-	<div class="flex justify-center mt-28 gap-4">
-		<a href="/proyectos"
-			class="flex bg-[#000000] border border-[var(--rojo-principal)] hover:bg-[#1a1a1a] transition-all duration-200 ease-in-out items-center rounded-full gap-4 py-3 px-19 text-2xl"
-		>
-			<img src="/public/icons/flecha-izquierda.svg" alt="behance" />
-			<span class="text-white"> Volver a Proyectos</span>
-		</a>
+	<section>
+        <div class="flex flex-col sm:flex-row justify-center mt-16 sm:mt-28 gap-4 px-4">
+            <a href="/proyectos"
+                class="flex bg-black border border-red-500 hover:bg-gray-800 transition-all duration-200 ease-in-out items-center justify-center rounded-full gap-2 sm:gap-4 py-3 px-6 sm:px-8 lg:px-19 text-lg sm:text-xl lg:text-2xl w-full sm:w-auto"
+            >
+                <img src="/public/icons/flecha-izquierda.svg" alt="flecha izquierda" />
+                <span class="text-white text-center sm:text-left"> 
+                    <span class="hidden sm:inline">Volver a Proyectos</span>
+                    <span class="sm:hidden">Volver</span>
+                </span>
+            </a>
 
-		<a href={behance} target="_blank"
-			class="flex bg-[#053EFF] hover:bg-[#00249F] transition-all duration-200 ease-in-out items-center rounded-full gap-4 py-3 px-10 text-2xl"
-		>
-			<span class="text-white"> Ver más de este proyecto</span>
-			<img src="/public/icons/behance.svg" alt="behance" />
-		</a>
-	</div>
+            <a href="#" target="_blank"
+                class="flex bg-blue-600 hover:bg-blue-800 transition-all duration-200 ease-in-out items-center justify-center rounded-full gap-2 sm:gap-4 py-3 px-6 sm:px-8 lg:px-10 text-lg sm:text-xl lg:text-2xl w-full sm:w-auto"
+            >
+                <span class="text-white text-center sm:text-left">
+                    <span class="hidden sm:inline">Ver más de este proyecto</span>
+                    <span class="sm:hidden">Ver proyecto</span>
+                </span>
+                <img src="/public/icons/behance.svg" alt="behance" />
+            </a>
+        </div>
+    </section>
 </section>

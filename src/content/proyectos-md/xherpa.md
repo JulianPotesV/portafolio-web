@@ -16,7 +16,7 @@ behance: 'https://www.behance.net/gallery/180174409/Logo-Xherpa-(propuesta)'
 layout: '../../layouts/ProyectosLayout.astro'
 ---
 
-<h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">
+<h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mb-8">
 				Propuesta de marca gráfica
 			</h2>
 			<p class="text-white text-lg">
@@ -31,24 +31,24 @@ layout: '../../layouts/ProyectosLayout.astro'
                 digitales como físicos.
 			</p>
 			<h2
-				class="text-[var(--rojo-principal)] text-4xl font-semibold mt-16 mb-8"
+				class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mt-16 mb-8"
 			>
 				Características Principales
 			</h2>
-			<ul class="text-white text-lg">
+			<ul class="text-white text-lg list-disc pl-5 space-y-4">
 				<li>
-					- Logotipo versátil, con inspiración tecnológica y formas geométricas limpias.
+					Logotipo versátil, con inspiración tecnológica y formas geométricas limpias.
 				</li>
 				<li>
-					- Paleta de colores vibrante, que comunica innovación y cercanía.
+					Paleta de colores vibrante, que comunica innovación y cercanía.
 				</li>
 				<li>
-					- Sistema visual adaptable, diseñado para funcionar en múltiples plataformas y formatos.
+					Sistema visual adaptable, diseñado para funcionar en múltiples plataformas y formatos.
 				</li>
 				<li>
-					- Tipografía moderna y legible, pensada para entornos digitales.
+					Tipografía moderna y legible, pensada para entornos digitales.
 				</li>
 				<li>
-					- Aplicaciones gráficas para redes sociales, papelería y presentaciones corporativas.
+					Aplicaciones gráficas para redes sociales, papelería y presentaciones corporativas.
 				</li>
 			</ul>

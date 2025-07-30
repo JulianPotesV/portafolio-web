@@ -2,13 +2,13 @@
 export interface Props {
 	title: string;
 	href: string;
-	link: string;
+	link?: string;
 	label: string;
 	alt?: string;
 	description?: string;
 	slug?: string;
 }
-const { title, href, label, link, alt = '', description = '', slug } = Astro.props;
+const { title, href, label, link = '#', alt = '', description = '', slug } = Astro.props;
 ---
 
 <a

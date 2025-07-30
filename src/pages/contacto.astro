@@ -5,25 +5,31 @@ import Formulario from '../components/Formulario.astro';
 ---
 
 <BaseLayout>
-	<section class="mt-16">
-		<div class="flex w-[61rem] mx-auto space-x-20">
+	<section class="mt-12 lg:mt-16 px-4">
+		<div
+			class="flex flex-col lg:flex-row w-full max-w-[61rem] mx-auto lg:space-x-20 space-y-8 lg:space-y-0 items-center"
+		>
 			<img
 				src="../public/images/contacto-imagen.png"
 				alt="images Julian Potes vector con celular"
-				class="w-80 h-80"
+				class="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 order-1 lg:order-1"
 			/>
-			<div class="flex flex-col gap-8 my-auto">
-				<h1 class="text-7xl font-bold text-[var(--rojo-principal)]">
+			<div
+				class="flex flex-col gap-6 lg:gap-8 my-auto order-1 lg:order-2 text-center lg:text-left"
+			>
+				<h1
+					class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-[var(--rojo-principal)]"
+				>
 					Contacto
 				</h1>
-				<h2 class="text-3xl text-white font-semibold">
+				<h2 class="text-xl sm:text-2xl lg:text-3xl text-white font-semibold">
 					¿Tienes un proyecto en mente o una idea que quieres hacer realidad?
 				</h2>
-				<p class="text-white text-lg">
+				<p class="text-white text-base lg:text-lg">
 					Estoy disponible para colaboraciones, ofertas laborales o simplemente
 					para conversar sobre diseño y creatividad.
 				</p>
-				<div class="flex">
+				<div class="flex justify-center lg:justify-start">
 					<Button
 						texto="Contáctame"
 						iconoSrc="../public/icons/whatsapp.svg"
@@ -35,96 +41,168 @@ import Formulario from '../components/Formulario.astro';
 		</div>
 	</section>
 
-	<section class="flex mx-auto justify-center w-[71rem] gap-4 mt-16">
-		<div>
+	<section
+		class="flex flex-col lg:flex-row mx-auto justify-center w-full max-w-[71rem] gap-6 lg:gap-4 mt-12 lg:mt-16 px-4"
+	>
+		<div class="w-full lg:w-auto">
 			<Formulario />
 		</div>
 
-		<div class="w-[681px]">
-			<div class="bg-[#1E1E1E] p-8 rounded-xl">
+		<div class="w-full lg:w-[681px]">
+			<div class="bg-[#1E1E1E] p-6 lg:p-8 rounded-xl">
 				<div class="flex flex-col gap-4">
-					<h2 class="text-3xl text-[var(--rojo-principal)] font-semibold">
+					<h2
+						class="text-2xl lg:text-3xl text-[var(--rojo-principal)] font-semibold"
+					>
 						Información de contacto
 					</h2>
-					<h3 class="text-white text-lg">
+					<h3 class="text-white text-base lg:text-lg">
 						Otras formas de ponerte en contacto conmigo
 					</h3>
-					<div class="text-white flex">
-						<img src="../public/mail.svg" alt="Email" />
+					<div class="text-white flex items-start">
+						<img
+							src="../public/mail.svg"
+							alt="Email"
+							class="w-6 h-6 mt-1 flex-shrink-0"
+						/>
 						<div class="flex flex-col ml-4">
-							<p class="text-lg">Email</p>
-							<p class="text-lg">julianpotesvillada@gmail.com</p>
+							<p class="text-base lg:text-lg font-medium">Email</p>
+							<p class="text-sm lg:text-lg break-all">
+								julianpotesvillada@gmail.com
+							</p>
 						</div>
 					</div>
-					<div class="text-white flex">
-						<img src="../public/whatsapp.svg" alt="Teléfono" />
+					<div class="text-white flex items-start">
+						<img
+							src="../public/whatsapp.svg"
+							alt="Teléfono"
+							class="w-6 h-6 mt-1 flex-shrink-0"
+						/>
 						<div class="flex flex-col ml-4">
-							<p class="text-lg">Teléfono</p>
-							<p class="text-lg">( +57 ) 317 381 1318</p>
+							<p class="text-base lg:text-lg font-medium">Teléfono</p>
+							<p class="text-sm lg:text-lg">( +57 ) 317 381 1318</p>
 						</div>
 					</div>
-					<div class="text-white flex">
-						<img src="../public/location.svg" alt="Ubicación" />
+					<div class="text-white flex items-start">
+						<img
+							src="../public/location.svg"
+							alt="Ubicación"
+							class="w-6 h-6 mt-1 flex-shrink-0"
+						/>
 						<div class="flex flex-col ml-4">
-							<p class="text-lg">Ubicación</p>
-							<p class="text-lg">Tuluá, Colombia</p>
+							<p class="text-base lg:text-lg font-medium">Ubicación</p>
+							<p class="text-sm lg:text-lg">Tuluá, Colombia</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="bg-[#1E1E1E] p-8 rounded-xl mt-4 space-y-4">
-				<h2 class="text-3xl font-semibold text-[var(--rojo-principal)]">Sígueme en redes</h2>
-				<h3 class="text-white text-lg">Conecta conmigo en mis plataformas favoritas</h3>
-				<div class="columns-2 space-y-4">
+			<div class="bg-[#1E1E1E] p-6 lg:p-8 rounded-xl mt-4 space-y-4">
+				<h2
+					class="text-2xl lg:text-3xl font-semibold text-[var(--rojo-principal)]"
+				>
+					Sígueme en redes
+				</h2>
+				<h3 class="text-white text-base lg:text-lg">
+					Conecta conmigo en mis plataformas favoritas
+				</h3>
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 					<div class="border border-[var(--rojo-principal)] rounded-lg">
-						<a href="" class="flex gap-4 p-4">
-							<img src="../public/icons/behance-mini.svg" alt="Logo Behance" />
-							<p class="text-lg text-white">Behance</p>
+						<a
+							href="https://www.behance.net/julianpotesv"
+							class="flex gap-4 p-4 hover:bg-[var(--rojo-principal)]/10 transition-colors"
+							target="_blank"
+						>
+							<img
+								src="../public/icons/behance-mini.svg"
+								alt="Logo Behance"
+								class="w-6 h-6 flex-shrink-0"
+							/>
+							<p class="text-base lg:text-lg text-white">Behance</p>
 						</a>
 					</div>
 					<div class="border border-[var(--rojo-principal)] rounded-lg">
-						<a href="" class="flex gap-4 p-4">
+						<a
+							href="https://www.linkedin.com/in/julian-potes/"
+							class="flex gap-4 p-4 hover:bg-[var(--rojo-principal)]/10 transition-colors"
+							target="_blank"
+						>
 							<img
 								src="../public/icons/linkedin-mini.svg"
 								alt="Logo Linkedin"
+								class="w-6 h-6 flex-shrink-0"
 							/>
-							<p class="text-lg text-white">Linkedin</p>
+							<p class="text-base lg:text-lg text-white">Linkedin</p>
 						</a>
 					</div>
 					<div class="border border-[var(--rojo-principal)] rounded-lg">
-						<a href="" class="flex gap-4 p-4">
-							<img src="../public/icons/github-mini.svg" alt="Logo Github" />
-							<p class="text-lg text-white">Github</p>
+						<a
+							href="https://github.com/JulianPotesV"
+							class="flex gap-4 p-4 hover:bg-[var(--rojo-principal)]/10 transition-colors"
+							target="_blank"
+						>
+							<img
+								src="../public/icons/github-mini.svg"
+								alt="Logo Github"
+								class="w-6 h-6 flex-shrink-0"
+							/>
+							<p class="text-base lg:text-lg text-white">Github</p>
 						</a>
 					</div>
 					<div class="border border-[var(--rojo-principal)] rounded-lg">
-						<a href="" class="flex gap-4 p-4">
+						<a
+							href="https://www.instagram.com/julianpotesvillada/"
+							class="flex gap-4 p-4 hover:bg-[var(--rojo-principal)]/10 transition-colors"
+							target="_blank"
+						>
 							<img
 								src="../public/icons/instagram-mini.svg"
 								alt="Logo Instagram"
+								class="w-6 h-6 flex-shrink-0"
 							/>
-							<p class="text-lg text-white">Instagram</p>
+							<p class="text-base lg:text-lg text-white">Instagram</p>
 						</a>
 					</div>
 				</div>
 			</div>
 
-            <div class="mt-4 bg-[#1E1E1E] p-8 rounded-xl space-y-4 text-white">
-                    <h2 class="text-3xl font-semibold text-[var(--rojo-principal)]">Disponibilidad</h2>
+			<div class="mt-4 bg-[#1E1E1E] p-6 lg:p-8 rounded-xl space-y-4 text-white">
+				<h2
+					class="text-2xl lg:text-3xl font-semibold text-[var(--rojo-principal)]"
+				>
+					Disponibilidad
+				</h2>
 
-                    <div class="flex items-center gap-3 text-lg">
-                        <span><img src="../public/icons/disponible.svg" alt=""></span>
-                        <span>Disponible para proyectos freelance y laborales.</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-lg">
-                        <span><img src="../public/icons/disponible2.svg" alt=""></span>
-                        <span>Abierto a colaboraciones.</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-lg">
-                        <span><img src="../public/icons/disponible3.svg" alt=""></span>
-                        <span>Tiempo de respuesta: 24-48 horas.</span>
-                    </div>
-            </div>
+				<div class="flex items-start gap-3 text-base lg:text-lg">
+					<span class="flex-shrink-0 mt-1"
+						><img
+							src="../public/icons/disponible.svg"
+							alt=""
+							class="w-5 h-5"
+						/></span
+					>
+					<span>Disponible para proyectos freelance y laborales.</span>
+				</div>
+				<div class="flex items-start gap-3 text-base lg:text-lg">
+					<span class="flex-shrink-0 mt-1"
+						><img
+							src="../public/icons/disponible2.svg"
+							alt=""
+							class="w-5 h-5"
+						/></span
+					>
+					<span>Abierto a colaboraciones.</span>
+				</div>
+				<div class="flex items-start gap-3 text-base lg:text-lg">
+					<span class="flex-shrink-0 mt-1"
+						><img
+							src="../public/icons/disponible3.svg"
+							alt=""
+							class="w-5 h-5"
+						/></span
+					>
+					<span>Tiempo de respuesta: 24-48 horas.</span>
+				</div>
+			</div>
 		</div>
 	</section>
 </BaseLayout>

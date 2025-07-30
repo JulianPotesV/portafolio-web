@@ -16,7 +16,7 @@ behance: 'https://www.behance.net/gallery/142755557/Dentinnova-(2017)'
 layout: '../../layouts/ProyectosLayout.astro'
 ---
 
-<h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">
+<h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mb-8">
 				Desarrollo de identidad visual
 			</h2>
 			<p class="text-white text-lg">
@@ -30,24 +30,24 @@ layout: '../../layouts/ProyectosLayout.astro'
 				aplicable tanto en medios digitales como en papelería institucional y señalética de la clínica.
 			</p>
 			<h2
-				class="text-[var(--rojo-principal)] text-4xl font-semibold mt-16 mb-8"
+				class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mt-16 mb-8"
 			>
 				Características Principales
 			</h2>
-			<ul class="text-white text-lg">
+			<ul class="text-white text-lg list-disc pl-5 space-y-4">
 				<li>
-					- Diseño de logotipo representativo del sector odontológico, con estilo limpio y profesional.
+					Diseño de logotipo representativo del sector odontológico, con estilo limpio y profesional.
 				</li>
 				<li>
-					- Sistema gráfico adaptable, pensado para medios físicos y digitales.
+					Sistema gráfico adaptable, pensado para medios físicos y digitales.
 				</li>
 				<li>
-					- Paleta cromática limpia, asociada a confianza, higiene y salud.
+					Paleta cromática limpia, asociada a confianza, higiene y salud.
 				</li>
 				<li>
-					- Tipografía legible y moderna, que refuerza el carácter institucional.
+					Tipografía legible y moderna, que refuerza el carácter institucional.
 				</li>
 				<li>
-					- Aplicaciones visuales para papelería, tarjetas, señalización y piezas promocionales.
+					Aplicaciones visuales para papelería, tarjetas, señalización y piezas promocionales.
 				</li>
 			</ul>

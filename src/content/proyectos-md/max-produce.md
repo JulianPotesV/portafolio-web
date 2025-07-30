@@ -16,7 +16,7 @@ behance: 'https://www.behance.net/gallery/226600599/Sitio-Web-Max-Produce-(Miami
 layout: '../../layouts/ProyectosLayout.astro'
 ---
 
-<h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">
+<h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mb-8">
 				Diseño sitio Web
 			</h2>
 			<p class="text-white text-lg">
@@ -30,24 +30,24 @@ layout: '../../layouts/ProyectosLayout.astro'
                 calidad, frescura y compromiso, alineada con los estándares del sector agroexportador.
 			</p>
 			<h2
-				class="text-[var(--rojo-principal)] text-4xl font-semibold mt-16 mb-8"
+				class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mt-16 mb-8"
 			>
 				Características Principales
 			</h2>
-			<ul class="text-white text-lg">
+			<ul class="text-white text-lg list-disc pl-5 space-y-4"">
 				<li>
-					- Diseño responsive, optimizado para todos los dispositivos.
+					Diseño responsive, optimizado para todos los dispositivos.
 				</li>
 				<li>
-					- Montaje en WordPress, con estructura editable y autogestionable.
+					Montaje en WordPress, con estructura editable y autogestionable.
 				</li>
 				<li>
-					- Presentación clara de servicios, procesos y valores de la empresa.
+					Presentación clara de servicios, procesos y valores de la empresa.
 				</li>
 				<li>
-					- Galería visual de productos, enfocada en resaltar calidad y frescura.
+					Galería visual de productos, enfocada en resaltar calidad y frescura.
 				</li>
 				<li>
-					- Carga rápida y experiencia de navegación fluida.
+					Carga rápida y experiencia de navegación fluida.
 				</li>
 			</ul>

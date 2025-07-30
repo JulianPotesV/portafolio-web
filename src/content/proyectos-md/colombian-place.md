@@ -16,10 +16,10 @@ behance: 'https://www.behance.net/gallery/137144251/Colombians-Place-(Virginia-U
 layout: '../../layouts/ProyectosLayout.astro'
 ---
 
-<h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">
+<h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mb-8">
 				Desarrollo de identidad visual
 			</h2>
-			<p class="text-white text-lg">
+			<p class="text-white text-lg list-disc pl-5 space-y-4">
 				Colombian's Place es un restaurante de comida típica colombiana ubicado 
                 en Estados Unidos. El proyecto consistió en la creación de su logotipo y
                  el diseño de piezas gráficas tanto digitales como físicas, con el objetivo
@@ -32,24 +32,24 @@ layout: '../../layouts/ProyectosLayout.astro'
                 la identidad a diferentes puntos de contacto con el cliente.
 			</p>
 			<h2
-				class="text-[var(--rojo-principal)] text-4xl font-semibold mt-16 mb-8"
+				class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mt-16 mb-8"
 			>
 				Características Principales
 			</h2>
 			<ul class="text-white text-lg">
 				<li>
-					- Diseño de logotipo inspirado en elementos culturales colombianos.
+					Diseño de logotipo inspirado en elementos culturales colombianos.
 				</li>
 				<li>
-					- Paleta de colores cálida y vibrante, que evoca el sabor y la alegría de la gastronomía.
+					Paleta de colores cálida y vibrante, que evoca el sabor y la alegría de la gastronomía.
 				</li>
 				<li>
-					- Piezas gráficas digitales, como banners y contenido para redes sociales.
+					Piezas gráficas digitales, como banners y contenido para redes sociales.
 				</li>
 				<li>
-					- Diseño de material físico, incluyendo menús, cartas y volantes promocionales.
+					Diseño de material físico, incluyendo menús, cartas y volantes promocionales.
 				</li>
 				<li>
-					- Sistema visual adaptable, pensado para comunicación en punto de venta y entornos digitales.
+					Sistema visual adaptable, pensado para comunicación en punto de venta y entornos digitales.
 				</li>
 			</ul>

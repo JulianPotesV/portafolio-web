@@ -16,7 +16,7 @@ behance: 'https://www.behance.net/gallery/136350647/Branding-Constructora-INAF'
 layout: '../../layouts/ProyectosLayout.astro'
 ---
 
-<h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">
+<h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mb-8">
 				Desarrollo de identidad visual
 			</h2>
 			<p class="text-white text-lg">
@@ -31,24 +31,24 @@ layout: '../../layouts/ProyectosLayout.astro'
 				imagen corporativa clara y memorable.
 			</p>
 			<h2
-				class="text-[var(--rojo-principal)] text-4xl font-semibold mt-16 mb-8"
+				class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mt-16 mb-8"
 			>
 				Características Principales
 			</h2>
-			<ul class="text-white text-lg">
+			<ul class="text-white text-lg list-disc pl-5 space-y-4">
 				<li>
-					- Diseño de logotipo con un enfoque estructurado y moderno.
+					Diseño de logotipo con un enfoque estructurado y moderno.
 				</li>
 				<li>
-					- Sistema gráfico funcional, adaptable a medios digitales y físicos.
+					Sistema gráfico funcional, adaptable a medios digitales y físicos.
 				</li>
 				<li>
-					- Tipografía y paleta de color pensadas para transmitir solidez y profesionalismo.
+					Tipografía y paleta de color pensadas para transmitir solidez y profesionalismo.
 				</li>
 				<li>
-					- Aplicaciones en papelería corporativa, señalética y elementos promocionales.
+					Aplicaciones en papelería corporativa, señalética y elementos promocionales.
 				</li>
 				<li>
-					- Manual básico de marca para uso coherente en distintas plataformas.
+					Manual básico de marca para uso coherente en distintas plataformas.
 				</li>
 			</ul>

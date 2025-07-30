@@ -16,7 +16,7 @@ behance: 'https://www.behance.net/gallery/226598417/Sitio-Web-Boating-Cartagena-
 layout: '../../layouts/ProyectosLayout.astro'
 ---
 
-<h2 class="text-[var(--rojo-principal)] text-4xl font-semibold mb-8">
+<h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mb-8">
 				Diseño sitio Web
 			</h2>
 			<p class="text-white text-lg">
@@ -32,24 +32,24 @@ layout: '../../layouts/ProyectosLayout.astro'
                 proceso de reserva.
 			</p>
 			<h2
-				class="text-[var(--rojo-principal)] text-4xl font-semibold mt-16 mb-8"
+				class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold mt-16 mb-8"
 			>
 				Características Principales
 			</h2>
-			<ul class="text-white text-lg">
+			<ul class="text-white text-lg list-disc pl-5 space-y-4">
 				<li>
-					- Diseño responsive, optimizado para móviles, tablets y escritorio.
+					Diseño responsive, optimizado para móviles, tablets y escritorio.
 				</li>
 				<li>
-					- Catálogo de embarcaciones con fotos, detalles técnicos y tarifas.
+					Catálogo de embarcaciones con fotos, detalles técnicos y tarifas.
 				</li>
 				<li>
-					- Galería visual que resalta la experiencia náutica y el destino turístico.
+					Galería visual que resalta la experiencia náutica y el destino turístico.
 				</li>
 				<li>
-					- Sistema de reservas integrado, para gestionar solicitudes de forma rápida y directa.
+					Sistema de reservas integrado, para gestionar solicitudes de forma rápida y directa.
 				</li>
 				<li>
-					- Navegación intuitiva centrada en el usuario, que facilita la exploración del sitio.
+					Navegación intuitiva centrada en el usuario, que facilita la exploración del sitio.
 				</li>
 			</ul>

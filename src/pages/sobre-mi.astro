@@ -4,22 +4,39 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout sinPaddingTop={true}>
-	<div class="bg-[url(../public/images/fondo-sobre-mi.png)] bg-no-repeat">
-		<section class="flex flex-col items-center gap-4 pt-40">
-			<img class="w-72"
+	<div
+		class="bg-[url(../public/images/fondo-sobre-mi.png)] bg-no-repeat bg-cover bg-center"
+	>
+		<section
+			class="flex flex-col items-center gap-4 pt-20 sm:pt-28 lg:pt-40 px-4"
+		>
+			<img
+				class="w-48 sm:w-56 md:w-64 lg:w-72"
 				src="../public/images/foto-sobre-mi.png"
 				alt="Foto de Julián Potes"
 			/>
-			<h1 class="text-8xl font-bold text-[var(--rojo-principal)]">Julián Potes</h1>
-			<p class="text-white text-3xl w-[911px] text-center">
+			<h1
+				class="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-[var(--rojo-principal)] text-center"
+			>
+				Julián Potes
+			</h1>
+			<p
+				class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl w-full max-w-[911px] text-center px-4 lg:px-0"
+			>
 				Diseñador gráfico que combina lo visual con lo funcional para crear
 				experiencias memorables.
 			</p>
 		</section>
-		<section class="flex flex-col items-center mt-18">
-			<div class="bg-[rgba(30,30,30,0.70)] w-[1144px] p-18 rounded-3xl">
-				<h2 class="text-4xl font-semibold text-[var(--rojo-principal)] mb-4">Sobre mi</h2>
-				<p class="text-white text-lg">
+		<section class="flex flex-col items-center mt-12 lg:mt-18 px-4">
+			<div
+				class="bg-[rgba(30,30,30,0.70)] w-full max-w-[1144px] p-6 sm:p-8 md:p-12 lg:p-18 rounded-2xl lg:rounded-3xl"
+			>
+				<h2
+					class="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[var(--rojo-principal)] mb-4"
+				>
+					Sobre mi
+				</h2>
+				<p class="text-white text-base lg:text-lg">
 					Hola, soy Julián Potes, diseñador gráfico con más de nueve años de
 					experiencia creando soluciones visuales que combinan estética,
 					funcionalidad y propósito. A lo largo de mi carrera he trabajado con
@@ -28,8 +45,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					gráficas, piezas editoriales y contenido digital que conecte con las
 					personas y refuerce el mensaje de cada marca.
 				</p>
-                <br>
-				<p class="text-white text-lg">
+				<br />
+				<p class="text-white text-base lg:text-lg">
 					En los últimos años, he expandido mi perfil hacia el diseño de
 					interfaces (UI/UX) y el desarrollo web, integrando nuevas herramientas
 					y metodologías centradas en la experiencia del usuario. Esto me ha
@@ -39,9 +56,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					objetivos del cliente.
 				</p>
 
-				<h2 class="text-4xl font-semibold text-[var(--rojo-principal)] mt-16 mb-4">En lo que creo</h2>
-				<h3 class="font-semibold text-white  text-2xl mb-4">Diseñar es pensar con las manos</h3>
-				<p class="text-white text-lg">
+				<h2
+					class="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[var(--rojo-principal)] mt-12 lg:mt-16 mb-4"
+				>
+					En lo que creo
+				</h2>
+				<h3
+					class="font-semibold text-white text-lg sm:text-xl lg:text-2xl mb-4"
+				>
+					Diseñar es pensar con las manos
+				</h3>
+				<p class="text-white text-base lg:text-lg">
 					Creo en el diseño como una herramienta poderosa para contar historias,
 					resolver problemas y generar valor. Me apasiona lo que hago y me
 					involucro en cada proyecto con compromiso, creatividad y atención al
@@ -49,19 +74,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					que sea funcional, estético y con propósito.
 				</p>
 
-				<h2 class="text-4xl font-semibold text-[var(--rojo-principal)] mt-16 mb-4">Qué hago</h2>
-				<h3 class="font-semibold text-white text-2xl mb-4">Un puente entre la idea y el impacto</h3>
-				<ul class="text-white text-lg">
+				<h2
+					class="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[var(--rojo-principal)] mt-12 lg:mt-16 mb-4"
+				>
+					Qué hago
+				</h2>
+				<h3
+					class="font-semibold text-white text-lg sm:text-xl lg:text-2xl mb-4"
+				>
+					Un puente entre la idea y el impacto
+				</h3>
+				<ul class="text-white text-base lg:text-lg space-y-2">
 					<li>
 						- Diseño gráfico: identidad visual, branding, editorial, publicidad.
 					</li>
 					<li>
-						- Diseño UX/UI: interfaces intuitivas, prototipado, wireframes, diseño
-						centrado en el usuario.
+						- Diseño UX/UI: interfaces intuitivas, prototipado, wireframes,
+						diseño centrado en el usuario.
 					</li>
 					<li>
-						- Desarrollo web: diseño y montaje de sitios web, enfoque responsive,
-						rendimiento y SEO básico.
+						- Desarrollo web: diseño y montaje de sitios web, enfoque
+						responsive, rendimiento y SEO básico.
 					</li>
 					<li>
 						- Estrategia visual: acompañamiento creativo para marcas y
@@ -69,9 +102,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					</li>
 				</ul>
 
-				<h2 class="text-4xl font-semibold text-[var(--rojo-principal)] mt-16 mb-4">Mi estilo de trabajo</h2>
-				<h3 class="font-semibold text-white text-2xl mb-4">Cercano, comprometido y adaptable</h3>
-				<p class="text-white text-lg">
+				<h2
+					class="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[var(--rojo-principal)] mt-12 lg:mt-16 mb-4"
+				>
+					Mi estilo de trabajo
+				</h2>
+				<h3
+					class="font-semibold text-white text-lg sm:text-xl lg:text-2xl mb-4"
+				>
+					Cercano, comprometido y adaptable
+				</h3>
+				<p class="text-white text-base lg:text-lg">
 					Me gusta trabajar de forma colaborativa, entender a fondo cada
 					necesidad y aportar soluciones visuales claras, coherentes y
 					memorables. Siempre estoy explorando nuevas herramientas y tendencias
@@ -79,14 +120,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				</p>
 			</div>
 		</section>
-		<section class="flex flex-col items-center gap-8 mt-16">
-			<h2 class="text-4xl font-semibold text-[var(--rojo-principal)]">¿Trabajamos juntos?</h2>
-			<p class="text-white text-lg text-center w-[911px]">
+		<section
+			class="flex flex-col items-center gap-6 lg:gap-8 mt-12 lg:mt-16 px-4 pb-12 lg:pb-0"
+		>
+			<h2
+				class="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[var(--rojo-principal)] text-center"
+			>
+				¿Trabajamos juntos?
+			</h2>
+			<p
+				class="text-white text-base lg:text-lg text-center w-full max-w-[911px] px-4 lg:px-0"
+			>
 				Estoy siempre abierto a nuevas ideas, colaboraciones y proyectos que
 				desafíen lo convencional. Si crees que mi perfil puede aportar valor a
 				lo que tienes en mente, hagámoslo realidad juntos.
 			</p>
-			<Button texto="Contáctame" iconoSrc="/icons/flecha-derecha.svg" href="/contacto" />
+			<Button
+				texto="Contáctame"
+				iconoSrc="/icons/flecha-derecha.svg"
+				href="/contacto"
+			/>
 		</section>
 	</div>
 </BaseLayout>

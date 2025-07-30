@@ -4,19 +4,19 @@ import Card from '../components/Card.astro';
 
 ---
 <Layout>
-<section id="proyectos-destacados" class="flex flex-col items-center text-white mt-20">
-    <div class="gap-8 flex flex-col items-center">
-        <h1 class="text-7xl font-bold text-[var(--rojo-principal)]">Mis Proyectos</h1>
-        <p class="w-[800px] text-center text-lg">
+<section id="proyectos-destacados" class="flex flex-col items-center text-white mt-12 lg:mt-20 px-4">
+    <div class="gap-6 lg:gap-8 flex flex-col items-center">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-[var(--rojo-principal)] text-center">Mis Proyectos</h1>
+        <p class="w-full max-w-[800px] text-center text-base lg:text-lg px-4 lg:px-0">
             Una colección de proyectos que reflejan mi evolución creativa, combinando diseño gráfico, 
             experiencias centradas en el usuario y mis primeros pasos en el desarrollo web con enfoque
             funcional y visual.
         </p>
     </div>
 
-    <div class="pt-16 max-w-[71rem]">
-        <h2 class="text-[var(--rojo-principal)] text-4xl font-semibold">Proyectos destacados</h2>
-        <div class="grid grid-cols-2 gap-8 mt-8">
+    <div class="pt-12 lg:pt-16 max-w-[71rem] w-full">
+        <h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold text-center lg:text-left">Proyectos destacados</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mt-6 lg:mt-8">
             <Card
                 title="Sitio Web XmartMedia"
                 href="/images/xmartmedia.png"
@@ -37,11 +37,11 @@ import Card from '../components/Card.astro';
         </div>
     </div>
 
-    <div class="max-w-[71rem] pt-16">
-        <h2 class="text-[var(--rojo-principal)] text-4xl font-semibold">Otros proyectos</h2>
-        <div class="grid grid-cols-3 gap-8 mt-8">
+    <div class="max-w-[71rem] w-full pt-12 lg:pt-16">
+        <h2 class="text-[var(--rojo-principal)] text-2xl lg:text-4xl font-semibold text-center lg:text-left">Otros proyectos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-6 lg:mt-8">
             <Card
-                title="Marca Colombian’s Place"
+                title="Marca Colombian's Place"
                 href="/images/colombian-place.png"
                 label="Diseño Gráfico"
                 link="#"
@@ -50,7 +50,7 @@ import Card from '../components/Card.astro';
             />
 
             <Card
-                title="MSitio Web Boating Cartagena"
+                title="Sitio Web Boating Cartagena"
                 href="/images/boating-cartagena.png"
                 label="UX/UI"
                 link="#"
@@ -97,11 +97,11 @@ import Card from '../components/Card.astro';
     </div>
 </section>
 
-<div class="flex justify-center mt-16">
+<div class="flex justify-center mt-12 lg:mt-16 px-4">
     <a href="https://www.behance.net/julianpotesv" target="_blank"
-        class="flex bg-[#053EFF] hover:bg-[#00249F] transition-all duration-200 ease-in-out items-center rounded-full gap-4 py-3 px-10 text-2xl">
-        <span class="text-white"> Ver Más </span>
-        <img src="/public/icons/behance.svg"alt="behance" />
+        class="flex bg-[#053EFF] hover:bg-[#00249F] transition-all duration-200 ease-in-out items-center rounded-full gap-3 lg:gap-4 py-2.5 lg:py-3 px-6 lg:px-10 text-lg lg:text-2xl">
+        <span class="text-white whitespace-nowrap"> Ver Más </span>
+        <img src="/public/icons/behance.svg" alt="behance" class="w-5 h-5 lg:w-6 lg:h-6" />
     </a>
 </div>
 
