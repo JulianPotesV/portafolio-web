@@ -26,7 +26,7 @@ const { sinPaddingTop = false } = Astro.props;
 		<title>Julian Potes</title>
 	</head>
 
-	<body class="bg-black min-h-screen flex flex-col">
+	<body class="bg-black min-h-screen flex flex-col overflow-x-hidden">
 		<Navbar />
 		<main class={`flex-1 ${sinPaddingTop ? '' : 'pt-24'}`}>
 			<slot />

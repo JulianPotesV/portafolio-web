@@ -7,9 +7,9 @@ import Card from '../components/Card.astro';
 
 <BaseLayout sinPaddingTop={true}>
 	<!-- hero -->
-	<section
+	<section 
 		id="hero"
-		class="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8 px-4 lg:px-0 bg-[url(../images/fondo-inicio.png)] bg-no-repeat"
+		class="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8 px-4 lg:px-0 bg-[url(/images/fondo-inicio.png)] bg-no-repeat"
 	>
 		<div class="order-1 lg:order-1 lg:mt-[9.5rem] mt-25">
 			<img
@@ -112,7 +112,7 @@ import Card from '../components/Card.astro';
 	</section>
 
 	<!-- Proyectos -->
-	<section class="max-w-[71rem] mx-auto mt-16 lg:mt-32 px-4">
+	<section class="max-w-[71rem] mx-auto mt-16 lg:mt-32 px-4 overflow-x-hidden">
 		<div
 			class="text-white flex flex-col sm:flex-row place-content-between lg:items-start sm:items-center gap-4 sm:gap-0"
 		>
@@ -178,8 +178,8 @@ import Card from '../components/Card.astro';
 			>
 				Empresas que han confiado en mi trabajo
 			</h1>
-			<div class="relative overflow-hidden">
-				<div class="flex animate-scroll space-x-8 lg:space-x-20">
+			<div class="relative overflow-hidden w-full">
+				<div class="flex animate-scroll min-w-full space-x-8 lg:space-x-20">
 					<img src="/logos-empresas/xmart-call.svg" class="h-12 lg:h-auto" />
 					<img
 						src="/logos-empresas/xherpa.svg"
@@ -319,7 +319,7 @@ import Card from '../components/Card.astro';
 	</section>
 
 	<!-- Sobre mi -->
-	<section class="my-12 lg:my-[4.5rem] px-4">
+	<section class="my-12 lg:my-[4.5rem] px-4 overflow-x-hidden">
 		<div
 			class="flex flex-col lg:flex-row max-w-[71rem] mx-auto items-center gap-8 lg:gap-18"
 		>
@@ -402,6 +402,7 @@ import Card from '../components/Card.astro';
 		animation-play-state: paused;
 	}
 
+	
 	@keyframes fadeUp {
 		from {
 			opacity: 0;
@@ -417,3 +418,4 @@ import Card from '../components/Card.astro';
 		animation: fadeUp 1.0s ease-out forwards;
 	}
 </style>
+
